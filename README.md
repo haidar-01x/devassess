@@ -40,21 +40,8 @@ No accounts, no login — just start testing.
 - **AI Integration**: Lovable (lovable.dev) — powers question generation, evaluation, and feedback
 - **Language**: TypeScript (where applicable)
 
-## Getting Started
-
-### Clone & Run Locally
-
-```bash
-# Clone from your GitHub
-git clone https://github.com/haidar-01x/devassess.git
-cd devassess
-
-# Install dependencies
-npm install
-# or pnpm install / yarn install
-
  
-Usage
+## Usage
 
 Go to https://code-skill-scout.vercel.app/
 Select your programming language
@@ -69,3 +56,16 @@ Acknowledgments
 
 Deployed on Vercel for seamless global hosting
 Inspired by the need for quick, honest developer skill checks
+
+
+### Clone & Run Locally
+
+```bash
+# Clone from your GitHub
+git clone https://github.com/haidar-01x/devassess.git
+cd devassess
+
+# Install dependencies
+npm install
+# or pnpm install / yarn install
+
