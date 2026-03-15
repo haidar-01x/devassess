@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 10%;
+    --foreground: 220 10% 90%;
+
+    --card: 220 20% 13%;
+    --card-foreground: 220 10% 90%;
+
+    --popover: 220 20% 13%;
+    --popover-foreground: 220 10% 90%;
+
+    --primary: 185 80% 55%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 75%;
+
+    --muted: 220 15% 16%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 185 80% 55%;
+    --accent-foreground: 220 25% 10%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 185 80% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 220 10% 90%;
+    --sidebar-primary: 185 80% 55%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 220 10% 90%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 185 80% 55%;
+
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono) !important;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(185 80% 55% / 0.15), 0 0 60px hsl(185 80% 55% / 0.05);
+  }
+
+  .border-glow {
+    border-color: hsl(185 80% 55% / 0.3);
+  }
+}
